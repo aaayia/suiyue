@@ -1,0 +1,33 @@
+.cell-container{
+  height: 120rpx;
+  width: 100%;  
+}
+
+.cell{
+  height: 120rpx;
+  display: flex;
+  margin:20rpx 40rpx 10rpx 40rpx;
+  border-radius:60rpx; 
+  background-color: white;
+  border:#808080 solid 2rpx;
+  align-items: center;
+
+}
+
+.img{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 30rpx;
+  margin-left: 30rpx;
+}
+
+.name{
+  margin-left: 20rpx;
+  font-size: 32rpx;
+}
+.description{
+  margin-left: 20rpx;
+  margin-right: 10rpx;
+  font-size: 25rpx;
+  color: #808080;
+}

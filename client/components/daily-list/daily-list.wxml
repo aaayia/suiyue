@@ -1,0 +1,7 @@
+<view   class='cell-container'>
+  <view class='cell'>
+    <image class='img' src='{{item.thumbnail}}'></image>
+    <text class='name'>{{item.name}}</text>
+    <text class='description'>{{item.description}}</text>
+  </view>
+</view>

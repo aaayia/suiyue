@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "日报",
+  "enablePullDownRefresh": true,
+        "usingComponents": {
+          "daily-list":"/components/daily-list/daily-list"
+        }
+}
+

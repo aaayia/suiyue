@@ -1,0 +1,6 @@
+<!--pages/books/books.wxml-->
+<view  class='container'>
+<block wx:for='{{dailyList}}' wx:key='{{index}}'>
+<daily-list catchtap='goDaily' data-item='{{item}}' item='{{item}}'></daily-list>
+</block>
+</view>

@@ -1,0 +1,6 @@
+<!--pages/story/story.wxml-->
+<import src="../../vendor/wxParse/wxParse.wxml"/>
+
+<template is="wxParse" data="{{wxParseData:story.nodes}}"/>
+
+<view></view>

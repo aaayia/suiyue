@@ -1,0 +1,26 @@
+<view class='container'>
+<view class='daily-header'>
+  <image class='background' src='{{dailyList.background}}'></image>
+<text class='description'>{{dailyList.description}}</text>
+</view>
+  <view class='editors'>
+    <text>主编</text>
+
+    <block wx:for='{{dailyList.editors}}' wx:key='{{index}}'>
+      <image catchtap='tapAvatar' data-editor='{{item}}' class='avatar' src='{{item.avatar}}'></image>
+    </block>
+  </view>
+
+  <view class='daily-list'>
+<block wx:for='{{dailyList.stories}}' wx:key='{{index}}'>
+<view catchtap='tapContent' data-story='{{item}}' class='content'>
+    <view class='text'>
+      <text class='title'>{{item.title}}</text>
+    </view>
+    <image mode='aspectFill' class='img' src='{{item.images[0]}}' wx:if='{{item.images[0]}}'></image>
+
+</view>
+</block>
+  </view>
+
+</view>

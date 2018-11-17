@@ -1,0 +1,7 @@
+<view class='container'>
+  <image class='img' mode='aspectFill' src='https://www.bing.com{{banner.url}}'>
+  </image>
+  <view class='bottom-view'>
+    <text class='copyright'>{{banner.copyright}}</text>
+  </view>
+</view>

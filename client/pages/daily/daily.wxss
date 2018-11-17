@@ -1,0 +1,72 @@
+.background{
+  background-color: white;
+  width: 100%;
+  height: 400rpx;
+}
+
+.editors{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.editors text{
+  font-size: 30rpx;
+  color: #808080;
+  margin-left: 20rpx;
+}
+
+.avatar{
+  height: 50rpx;
+  width: 50rpx;
+  border-radius: 25rpx;
+   margin-left: 30rpx;
+}
+.daily-list{
+  margin: 20rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+.content{
+   display: flex;
+   flex-direction: row;
+  justify-content: space-between;
+  background: white;
+  margin: 20rpx;
+  flex: 1;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  width: 95%;
+}
+
+.daily-header{
+    position: relative;
+
+}
+.description{
+  position: absolute;
+  bottom: 50rpx;
+  left: 40rpx;
+  z-index: 1000;
+  color: white;
+  font-size: 35rpx;
+}
+
+.content .img {
+  width: 130rpx;
+  height: 130rpx;
+  margin: 10rpx;
+  
+}
+.content .title{
+  font-size: 32rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  color: #020a13;
+    margin-left: 20rpx;
+
+}

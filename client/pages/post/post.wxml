@@ -1,0 +1,30 @@
+<view class='container'>
+  <view class='banner-container'>
+    <swiper autoplay class='banner'>
+      <block wx:for='{{banners}}' wx:key='{{index}}'>
+        <swiper-item  catchtap='tapImage' data-url='http://www.bing.com{{item.url}}'>
+          <image src="http://www.bing.com{{item.url}}" class='banner-image'>
+          </image>
+          <view class='banner-desc'>
+            <text>{{item.copyright}}</text>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <block wx:for='{{posts}}' wx:for-item='item' wx:key='{{item.id}}'>
+    <view class='cell'>
+      <view class='cell-top-view'>
+        <text>{{item.date}}</text>
+      </view>
+      <image catchtap='tapImage' data-url='{{item.img_url}}' class='cell-image' src='{{item.img_url}}'></image>
+      <view class='cell-bottom-view'>
+        <text>{{item.picture_author}}</text>
+        <text>{{item.content}}</text>
+        <text>{{item.text_authors}}</text>
+      </view>
+    </view>
+
+  </block>
+</view>
